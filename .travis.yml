@@ -4,9 +4,9 @@ php:
 deploy:
   provider: elasticbeanstalk
   access_key_id: 
-    secure: "Encrypted AKIAIQZ2L26B43ZVO5TQ="
+    secure: "AKIAIQZ2L26B43ZVO5TQ="
   secret_access_key:
-    secure: "Encypted QPZ6UGfdr8iS31ZAAo/BxICUU8OV2bjVYdZ258yT="
+    secure: "QPZ6UGfdr8iS31ZAAo/BxICUU8OV2bjVYdZ258yT="
   region: "us-west-2"  
   app: "test-app"
   env: "TestApp-env"
