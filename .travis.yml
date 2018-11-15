@@ -8,6 +8,4 @@ deploy:
   app: "test-app"
   env: "TestApp-env"
   bucket_name: "elasticbeanstalk-us-west-2-861335261444"
-  on:
-    branch: master
   skip-cleanup: true
