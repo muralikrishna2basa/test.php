@@ -1,15 +1,7 @@
 language: php
 php:
   - 7.2
-  
 sudo: required
-
-services:
-  - php
-
-after_deploy:
-  - echo "done deploying"
-
 deploy:
   provider: elasticbeanstalk
   access_key_id: 
@@ -21,3 +13,5 @@ deploy:
   env: "TestApp-env"
   bucket_name: "elasticbeanstalk-us-west-2-861335261444"
   skip-cleanup: true
+after_deploy:
+  - echo "done deploying"
