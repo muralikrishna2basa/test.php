@@ -5,13 +5,15 @@ sudo: required
 deploy:
   provider: elasticbeanstalk
   access_key_id: 
-    secure: "AKIAIQZ2L26B43ZVO5TQ="
+    secure: "AKIAIQZ2L26B43ZVO5TQ"
   secret_access_key:
-    secure: "QPZ6UGfdr8iS31ZAAo/BxICUU8OV2bjVYdZ258yT="
+    secure: "QPZ6UGfdr8iS31ZAAo/BxICUU8OV2bjVYdZ258yT"
   region: "us-west-2"  
   app: "test-app"
   env: "TestApp-env"
   bucket_name: "elasticbeanstalk-us-west-2-861335261444"
+  on:
+    branch: master
   skip-cleanup: true
 after_deploy:
   - echo "done deploying"
