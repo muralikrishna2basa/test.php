@@ -2,6 +2,15 @@ language: php
 php:
   - 7.2
 sudo: required
+
+before_script:
+   
+  - comoser install --no-interaction
+
+script:
+   
+  - vendor/bin/phpunit
+  
 deploy:
   provider: elasticbeanstalk
   access_key_id: 
